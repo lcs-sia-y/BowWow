@@ -9,8 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView{
+            VStack{
+                Button(action: {
+                    // get a new dog
+                }, label: {
+                    Text("More, please!")
+                })
+                
+                Image("example")
+                    .padding()
+                
+                Spacer()
+            }
+            .navigationTitle("Bow WOW!")
+        }
     }
 }
 
@@ -19,3 +32,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
